@@ -1,10 +1,10 @@
-# ⚙️ Systems Under The Hood
+# Systems Under The Hood
 
 > A collection of practical experiments, benchmarks, and deep dives into core computer science, database internals, networking, and memory management.
 
 ---
 
-## 🎯 Why This Repository Exists
+## Why This Repository Exists
 
 In an era saturated with framework hype, AI wrappers, and rapid application development, writing high-level code has become a commodity. However, building **resilient, high-throughput, and cost-efficient distributed systems** requires understanding what happens below the abstraction layer.
 
@@ -14,7 +14,7 @@ No bloated business logic. No full-stack CRUD apps. Just pure engineering fundam
 
 ---
 
-## 🧪 Focus Areas & Core Concepts
+## Focus Areas & Core Concepts
 
 This repository is structured into focused, reproducible experiments:
 
