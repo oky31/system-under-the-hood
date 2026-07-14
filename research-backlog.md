@@ -11,3 +11,4 @@ A curated list of system internals, architecture patterns, and tools I am invest
 - [ ] SSR vs Web socket
 - [ ] Web socket from scratch
 - [ ] Deep Dive: CSP (Communicating Sequential Processes) by Tony Hoare
+- [ ] Deep Dive: Save your token
