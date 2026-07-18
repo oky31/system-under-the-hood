@@ -25,4 +25,23 @@ This repository is structured into focused, reproducible experiments:
 
 ---
 
+## Directory Structure
 
+```
+.
+├── README.md              ← You are here
+├── research-backlog.md     ← Topics under investigation
+└── deep-dive/              ← In-depth articles (one folder per topic)
+    └── <topic-slug>/
+        ├── README.md       ← Article content (folder = topic, file = content)
+        └── examples/       ← Runnable code samples (optional)
+            └── <name>/
+                └── main.go
+```
+
+**Conventions:**
+- **One topic, one folder** — every article lives in `deep-dive/<topic-slug>/`, flat (no sub-categories).
+- **README.md as entry point** — each topic folder uses `README.md` for the article body, so GitHub renders it automatically when browsing.
+- **Slug style** — kebab-case, minimal words (e.g. `go-garbage-collector`, not `how-the-go-garbage-collector-works`).
+- **Examples go in `examples/`** — if an article includes runnable code, place it in numbered subdirectories under `examples/` (e.g. `01-stack-vs-heap/main.go`).
+- **Cross-category topics** — some articles span multiple focus areas (e.g. GC touches Memory *and* Systems). That's fine; categorization is handled via an INDEX in this README, not directory nesting.
