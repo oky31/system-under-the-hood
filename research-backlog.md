@@ -8,3 +8,8 @@ A curated list of system internals, architecture patterns, and tools I am invest
 - [ ] Evaluating Caching Strategies: When Redis Is (and Isn't) Necessary
 - [ ] Heap vs Stack
 - [ ] Head vs Stack: Algorithms
+- [ ] SSR vs Web socket
+- [ ] Web socket from scratch
+- [ ] Deep Dive: CSP (Communicating Sequential Processes) by Tony Hoare
+- [ ] Deep Dive: Save your token
+- [ ] Deep Dive: How opcache php works
