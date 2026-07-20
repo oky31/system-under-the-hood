@@ -148,6 +148,14 @@ Dari sini Kita bisa pecah langkah-langkah nya sebagai berikut :
 
 Paradoks menarik: Meski CreateNewUser() cuma bikin struct sederhana, return type *User memaksa si struct pindah ke heap — dan itu artinya GC harus turun tangan buat bersihin nanti. Inilah trade-off pake pointer di Go.
 
+
+
+Contoh di atas compiler melakukan proses "Escape analysis" untuk memutuskan value disimpan di stack atau di heap. Ada beberapa yang alasan yang bisa di gunakna oleh compiler untuk memutuskan value ke stack atau heap, ukuran nilai yang dinamis menjadi salah satu aturan value akan di simpan di heap, compiler juga bisa memutuskan berdasarkan sifat *Transitive Escape* kondisi ini terjadi ketika sebuah nilai baru akan di masukan ke nilai yang sudah pasti masuk kedalam heap. 
+
+Aturan Escape analysis ini susah di hapal, karena bisa terjadi pergantian algorithma di setiap go release. Jika kita sebagai software engineer yang mementingkan performance maka akan muncul pertanyaa, Bagaimana kita bisa menentukan code yang di tulis ini harus masuk ke heap atau ke stack ?. untuk menjawab pertanyaan tadi kita butuh riset lebih jauh 
+
+
+
 # Resources : 
 
 - https://go.dev/doc/gc-guide
